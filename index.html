@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GCM Servicio Técnico | Ceres</title>
+  <meta name="description" content="GCM Servicio Técnico - Reparación de consolas, TV, PC, notebooks y celulares en Ceres y zona.">
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#15191f; --text:#f5f7fa; --muted:#aeb6c2;
+      --accent:#19c37d; --line:#252b34;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,13,16,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    nav{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .logo{font-size:1.25rem;font-weight:800}
+    .logo span{color:var(--accent)}
+    .navlinks{display:flex;gap:18px;font-size:.95rem;color:var(--muted)}
+    .navlinks a:hover{color:var(--text)}
+    .hero{padding:80px 0 65px;text-align:center;background:radial-gradient(circle at top, #18231f 0, var(--bg) 55%)}
+    .tag{display:inline-block;padding:7px 12px;border:1px solid #2c5645;border-radius:999px;color:#7ee8b7;font-size:.85rem}
+    h1{font-size:clamp(2.2rem,7vw,4.5rem);line-height:1.05;margin:18px 0 15px}
+    .hero p{max-width:680px;margin:0 auto 28px;color:var(--muted);font-size:1.08rem}
+    .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700;border:1px solid var(--line)}
+    .primary{background:var(--accent);color:#06140e;border-color:var(--accent)}
+    section{padding:60px 0}
+    .title{text-align:center;margin-bottom:30px}
+    .title h2{margin:0 0 8px;font-size:2rem}
+    .title p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+    .card .icon{font-size:2rem}
+    .card h3{margin:12px 0 7px}
+    .card p{margin:0;color:var(--muted);font-size:.95rem}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+    ul{padding-left:20px;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);text-align:center}
+    @media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.navlinks{display:none}}
+    @media(max-width:500px){.grid{grid-template-columns:1fr}.hero{padding-top:60px}.wrap{padding:0 15px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#inicio">GCM <span>Servicio Técnico</span></a>
+      <div class="navlinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <span class="tag">Ceres, Santa Fe · Ceres y zona</span>
+      <h1>GCM Servicio Técnico</h1>
+      <p>Reparación y mantenimiento de consolas, TV, PC, notebooks y celulares. Atención personalizada y soluciones para tus equipos.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#contacto">Consultar por WhatsApp</a>
+        <a class="btn" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <div class="title">
+        <h2>¿Qué hacemos?</h2>
+        <p>Una primera lista para después completar y ajustar.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="icon">🎮</div><h3>Consolas</h3><p>PS2, PS3, PS4 y PS5. Mantenimiento, HDMI, carga, fuentes y reparación.</p></article>
+        <article class="card"><div class="icon">📺</div><h3>Televisores</h3><p>Diagnóstico y reparación de TV, placas, fuentes, iluminación y fallas de imagen.</p></article>
+        <article class="card"><div class="icon">💻</div><h3>PC y notebooks</h3><p>Reparación, mantenimiento, instalación de sistemas y solución de problemas.</p></article>
+        <article class="card"><div class="icon">📱</div><h3>Celulares</h3><p>Reparaciones y cambio de módulos, conectores y otros componentes.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabajos">
+    <div class="wrap">
+      <div class="title">
+        <h2>Trabajos realizados</h2>
+        <p>Acá después podemos poner fotos reales de tus reparaciones.</p>
+      </div>
+      <div class="about">
+        <div class="contact">
+          <h3>Galería</h3>
+          <p style="color:var(--muted)">Espacio reservado para fotos de consolas, televisores, PCs, notebooks y celulares reparados.</p>
+        </div>
+        <div class="contact">
+          <h3>Productos</h3>
+          <p style="color:var(--muted)">Podemos agregar un catálogo con consolas, joysticks, juegos y accesorios disponibles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <div class="title">
+        <h2>Contacto</h2>
+        <p>Estos datos los completamos juntos en el próximo paso.</p>
+      </div>
+      <div class="contact">
+        <ul>
+          <li>📍 Ceres, Santa Fe</li>
+          <li>📲 WhatsApp: AGREGAR NÚMERO</li>
+          <li>📸 Instagram: reparacionesconsolasceres</li>
+          <li>📘 Facebook: reparacionesconsolasceres</li>
+          <li>🕒 Horarios: AGREGAR HORARIOS</li>
+        </ul>
+        <div class="buttons" style="justify-content:flex-start">
+          <a class="btn primary" href="#" onclick="alert('Acá colocaremos tu enlace de WhatsApp');return false">WhatsApp</a>
+          <a class="btn" href="#" onclick="alert('Acá colocaremos tu Instagram');return false">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 GCM Servicio Técnico · Ceres, Santa Fe</div>
+</footer>
+</body>
+</html>

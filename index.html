@@ -39,6 +39,19 @@ section{padding:52px 0} .title{text-align:center;margin-bottom:28px}
 .box h3{margin-top:0} .box p,.box li{color:var(--muted)}
 .big-wa{font-size:1.45rem;font-weight:900;color:#54ee82}
 footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--muted);text-align:center}
+
+.work-card{min-height:0;display:flex;flex-direction:column;justify-content:center;align-items:stretch!important;gap:10px!important;filter:none!important;background:linear-gradient(145deg,#06182c,#03101f);border:1px solid #168de0;border-radius:16px;padding:16px;box-shadow:0 0 22px rgba(20,143,230,.20)}
+.work-kicker{font-size:.72rem;font-weight:900;letter-spacing:1.3px;color:#42b8ff;text-align:left}
+.work-title{font-size:1.35rem;font-weight:900;text-align:left;color:#fff;margin-bottom:2px}
+.work-subtitle{font-size:.78rem;color:#a9c8df;margin-bottom:2px}
+.tiktok-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tiktok-item{display:flex;align-items:center;justify-content:space-between;gap:7px;padding:9px 10px;border-radius:10px;background:linear-gradient(135deg,#081f35,#05101d);border:1px solid #146fae;text-decoration:none;color:#fff;transition:.2s}
+.tiktok-item:hover{border-color:#42b8ff;transform:translateY(-1px)}
+.tiktok-left{display:flex;align-items:center;gap:7px;min-width:0}
+.tiktok-icon{font-size:1rem;font-weight:900;text-shadow:1px 1px 0 #00f2ea,-1px -1px 0 #ff0050}
+.tiktok-name{font-size:.78rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tiktok-play{font-size:.78rem;color:#42b8ff;flex:0 0 auto}
+@media(max-width:600px){.tiktok-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-card{padding:13px}.work-title{font-size:1.15rem}.tiktok-name{font-size:.72rem}}
 @media(max-width:900px){.services{grid-template-columns:repeat(4,1fr)}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:180px;font-size:7rem}.promos{grid-template-columns:1fr 1fr}.info{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.nav{display:none}.services,.promos,.gallery,.info{grid-template-columns:1fr}.gallery .item{height:260px}}
 </style>
@@ -60,7 +73,18 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <p><b>REPARACIÓN · MANTENIMIENTO · VENTA<br>DE JUEGOS Y ACCESORIOS</b></p>
 <a class="cta" href="https://wa.me/5493491511856" target="_blank">💬 Escribinos por WhatsApp</a>
 </div>
-<div class="hero-art">🎮<br>🎮</div>
+<div class="hero-art work-card">
+<div class="work-kicker">🔧 TRABAJOS REALIZADOS</div>
+<div class="work-title">Mirá nuestros trabajos</div>
+<div class="work-subtitle">Reparaciones y mantenimiento realizados por GCM</div>
+<div class="tiktok-grid">
+<a class="tiktok-item" href="https://vt.tiktok.com/ZSbejeHF7/" target="_blank" rel="noopener"><span class="tiktok-left"><span class="tiktok-icon">♪</span><span class="tiktok-name">Trabajo 1</span></span><span class="tiktok-play">▶</span></a>
+<a class="tiktok-item" href="https://vt.tiktok.com/ZSbe6eMWL/" target="_blank" rel="noopener"><span class="tiktok-left"><span class="tiktok-icon">♪</span><span class="tiktok-name">Trabajo 2</span></span><span class="tiktok-play">▶</span></a>
+<a class="tiktok-item" href="https://vt.tiktok.com/ZSbejKbdV/" target="_blank" rel="noopener"><span class="tiktok-left"><span class="tiktok-icon">♪</span><span class="tiktok-name">Trabajo 3</span></span><span class="tiktok-play">▶</span></a>
+<a class="tiktok-item" href="https://vt.tiktok.com/ZSbe6h1KJ/" target="_blank" rel="noopener"><span class="tiktok-left"><span class="tiktok-icon">♪</span><span class="tiktok-name">Trabajo 4</span></span><span class="tiktok-play">▶</span></a>
+<a class="tiktok-item" href="https://vt.tiktok.com/ZSbe619yY/" target="_blank" rel="noopener"><span class="tiktok-left"><span class="tiktok-icon">♪</span><span class="tiktok-name">Trabajo 5</span></span><span class="tiktok-play">▶</span></a>
+</div>
+</div>
 </div>
 </section>
 

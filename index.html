@@ -54,13 +54,24 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 @media(max-width:600px){.tiktok-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-card{padding:13px}.work-title{font-size:1.15rem}.tiktok-name{font-size:.72rem}}
 @media(max-width:900px){.services{grid-template-columns:repeat(4,1fr)}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:180px;font-size:7rem}.promos{grid-template-columns:1fr 1fr}.info{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.nav{display:none}.services,.promos,.gallery,.info{grid-template-columns:1fr}.gallery .item{height:260px}}
+
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+.quick a{background:linear-gradient(180deg,#092744,#061526);border:1px solid #168de0;border-radius:11px;padding:12px 9px;text-align:center;font-weight:800;font-size:.88rem;transition:.2s}
+.quick a:hover{transform:translateY(-2px);border-color:#52bdff;box-shadow:0 0 15px rgba(30,160,255,.2)}
+.quick small{display:block;color:var(--muted);font-weight:500;margin-top:3px;font-size:.7rem}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.trust .box{text-align:center;padding:18px}
+.trust .ico{font-size:1.8rem;margin-bottom:6px}
+.map-btn{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:9px;border:1px solid #168de0;background:#061a30;font-weight:800}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:50;background:#1fd967;color:#03120a;border:2px solid #b9ffd0;border-radius:999px;padding:13px 17px;font-weight:900;box-shadow:0 8px 28px rgba(0,0,0,.45);display:flex;gap:8px;align-items:center}
+@media(max-width:700px){.quick{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:1fr}.float-wa{right:12px;bottom:12px;padding:11px 14px;font-size:.9rem}}
 </style>
 </head>
 <body>
 <header>
 <div class="wrap"><nav>
 <a class="brand" href="#inicio">GCM <span>SERVICIO TÉCNICO</span></a>
-<div class="nav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a></div>
+<div class="nav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#confianza">Confianza</a><a href="ventas.html">🛒 En venta</a><a href="#contacto">Contacto</a></div>
 <div class="socials"><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank" aria-label="Instagram">📸</a><a href="https://www.facebook.com/share/1F8xRkafck/" target="_blank" aria-label="Facebook">f</a><a href="https://wa.me/5493491511856" target="_blank" aria-label="WhatsApp">◉</a></div>
 </nav></div>
 </header>
@@ -72,6 +83,12 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <h1>TU CONSOLA<br>EN LAS MEJORES<br>MANOS</h1>
 <p><b>REPARACIÓN · MANTENIMIENTO · VENTA<br>DE JUEGOS Y ACCESORIOS</b></p>
 <a class="cta" href="https://wa.me/5493491511856" target="_blank">💬 Escribinos por WhatsApp</a>
+<div class="quick" aria-label="Acceso rápido">
+<a href="#servicios">🎮<br>Consolas<small>PS2 a PS5 · Xbox</small></a>
+<a href="#servicios">📺<br>TV<small>Reparación general</small></a>
+<a href="#servicios">💻<br>PC / Notebook<small>Diagnóstico y reparación</small></a>
+<a href="#servicios">📱<br>Celulares<small>Módulos y conectores</small></a>
+</div>
 </div>
 <div class="hero-art work-card">
 <div class="work-kicker">🔧 TRABAJOS REALIZADOS</div>
@@ -131,6 +148,17 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 </div>
 </section>
 
+<section id="confianza">
+<div class="wrap">
+<div class="title"><h2>¿Por qué elegir GCM?</h2><p>Atención personalizada para Ceres y zona.</p></div>
+<div class="trust">
+<div class="box"><div class="ico">🔎</div><h3>Diagnóstico</h3><p>Revisamos el equipo y te explicamos el problema antes de realizar el trabajo.</p></div>
+<div class="box"><div class="ico">💬</div><h3>Presupuesto</h3><p>Consultá el valor de la reparación y coordiná el trabajo directamente por WhatsApp.</p></div>
+<div class="box"><div class="ico">🛡️</div><h3>Garantía</h3><p>Consultá las condiciones de garantía según el trabajo realizado y el repuesto utilizado.</p></div>
+</div>
+</div>
+</section>
+
 <section id="contacto">
 <div class="wrap">
 <div class="title"><h2>Contacto</h2><p>Consultas, reparaciones y productos.</p></div>
@@ -142,6 +170,8 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 </div>
 </section>
 
-<footer><div class="wrap">GCM Servicio Técnico · Consolas, tecnología y reparación · Ceres, Santa Fe<br><br>© 2026 GCM Servicio Técnico</div></footer>
+<footer>
+<div style="margin-bottom:8px;font-weight:800;color:#eaf5ff">www.gcmserviciotecnico.com.ar</div><div class="wrap">GCM Servicio Técnico · Consolas, tecnología y reparación · Ceres, Santa Fe<br><br>© 2026 GCM Servicio Técnico</div></footer>
+<a class="float-wa" href="https://wa.me/5493491511856" target="_blank" rel="noopener">💬 WhatsApp</a>
 </body>
 </html>

@@ -53,7 +53,17 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 .tiktok-play{font-size:.78rem;color:#42b8ff;flex:0 0 auto}
 @media(max-width:600px){.tiktok-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-card{padding:13px}.work-title{font-size:1.15rem}.tiktok-name{font-size:.72rem}}
 @media(max-width:900px){.services{grid-template-columns:repeat(4,1fr)}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:180px;font-size:7rem}.promos{grid-template-columns:1fr 1fr}.info{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.nav{display:none}.services,.promos,.gallery,.info{grid-template-columns:1fr}.gallery .item{height:260px}}
+.menu-btn{display:none;background:#061a30;color:#fff;border:1px solid #168de0;border-radius:9px;padding:9px 12px;font-size:1.35rem;cursor:pointer}
+@media(max-width:600px){
+  nav{position:relative}
+  .menu-btn{display:block;margin-left:auto}
+  .nav{display:none;position:absolute;top:62px;right:0;left:0;background:rgba(2,9,20,.98);border:1px solid #168de0;border-radius:0 0 14px 14px;padding:10px;flex-direction:column;gap:0;z-index:50;box-shadow:0 10px 25px rgba(0,0,0,.4)}
+  .nav.open{display:flex}
+  .nav a{padding:13px 10px;border-bottom:1px solid rgba(22,141,224,.22)}
+  .nav a:last-child{border-bottom:0}
+  .services,.promos,.gallery,.info{grid-template-columns:1fr}
+  .gallery .item{height:260px}
+}
 
 .quick{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
 .quick a{background:linear-gradient(180deg,#092744,#061526);border:1px solid #168de0;border-radius:11px;padding:12px 9px;text-align:center;font-weight:800;font-size:.88rem;transition:.2s}
@@ -71,7 +81,8 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <header>
 <div class="wrap"><nav>
 <a class="brand" href="#inicio">GCM <span>SERVICIO TÉCNICO</span></a>
-<div class="nav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#confianza">Confianza</a><a href="ventas.html">🛒 En venta</a><a href="#contacto">Contacto</a></div>
+<button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+<div class="nav" id="mainNav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#confianza">Confianza</a><a href="ventas.html">🛒 En venta</a><a href="#contacto">Contacto</a></div>
 <div class="socials"><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank" aria-label="Instagram">📸</a><a href="https://www.facebook.com/share/1F8xRkafck/" target="_blank" aria-label="Facebook">f</a><a href="https://wa.me/5493491511856" target="_blank" aria-label="WhatsApp">◉</a></div>
 </nav></div>
 </header>
@@ -173,5 +184,17 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <footer>
 <div style="margin-bottom:8px;font-weight:800;color:#eaf5ff">www.gcmserviciotecnico.com.ar</div><div class="wrap">GCM Servicio Técnico · Consolas, tecnología y reparación · Ceres, Santa Fe<br><br>© 2026 GCM Servicio Técnico</div></footer>
 <a class="float-wa" href="https://wa.me/5493491511856" target="_blank" rel="noopener">💬 WhatsApp</a>
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const mainNav = document.getElementById('mainNav');
+if (menuBtn && mainNav) {
+  menuBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+  });
+  mainNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => mainNav.classList.remove('open'));
+  });
+}
+</script>
 </body>
 </html>

@@ -1,14 +1,15 @@
 {
-  "name": "Servicio a la comunidad - Ceres",
-  "short_name": "Ceres Comunidad",
+  "name": "GCM SERVICIOS A LA COMUNIDAD",
+  "short_name": "GCM Comunidad",
   "start_url": "servicios-ceres.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#050a12",
   "theme_color": "#071a2d",
-  "description": "Teléfonos útiles, emergencias, clima y Ojos en Alerta para Ceres.",
+  "description": "Servicio a la comunidad de Ceres: teléfonos útiles, emergencias, clima y Ojos en Alerta.",
   "icons": [
     {
-      "src": "servicio-comunidad-icon-512.png",
+      "src": "gcm-servicios-comunidad-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios Ceres | GCM Servicio Técnico</title>
+<meta name="description" content="Teléfonos útiles, emergencias y datos meteorológicos de Ceres, Santa Fe.">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#070b12;color:#f4f7fb}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(7,11,18,.96);border-bottom:1px solid #17324d;padding:14px 5%}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-size:20px;font-weight:800;color:#28a9ff}
+.back{display:inline-block;padding:10px 15px;border:1px solid #28a9ff;border-radius:10px;color:#fff}
+main{max-width:1150px;margin:auto;padding:35px 5% 60px}
+.hero{text-align:center;padding:20px 0 28px}
+.hero h1{font-size:clamp(30px,6vw,52px);margin:10px 0;color:#fff}
+.hero p{color:#aebdcb;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:25px}
+.card{background:linear-gradient(145deg,#0d1622,#0a111b);border:1px solid #1c3a55;border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+.card h2{font-size:20px;margin:0 0 8px}
+.card p{color:#aebdcb;margin:7px 0 15px}
+.call{display:block;text-align:center;background:#0d8eea;color:#fff;padding:12px;border-radius:10px;font-weight:700}
+.emergency .call{background:#c62828}
+.weather{margin-top:28px}
+.weather h2{margin-bottom:8px}
+.weather p{color:#aebdcb}
+.weather-frame{width:100%;height:720px;border:1px solid #1c3a55;border-radius:16px;background:#fff}
+.weather-btn{display:inline-block;margin-top:14px;background:#28a9ff;color:#04101b;padding:12px 18px;border-radius:10px;font-weight:800}
+.note{margin-top:22px;padding:15px;border-left:4px solid #28a9ff;background:#0b1420;color:#aebdcb;border-radius:8px}
+footer{text-align:center;padding:25px;color:#718395;border-top:1px solid #17324d}
+@media(max-width:600px){.weather-frame{height:600px}.nav{align-items:flex-start}.logo{font-size:17px}.back{padding:8px 11px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">GCM Servicio Técnico</div>
+    <a class="back" href="index.html">← Volver al inicio</a>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <h1>📍 Servicios Ceres</h1>
+    <p>Teléfonos útiles, emergencias y datos meteorológicos de Ceres, Santa Fe.</p>
+  </section>
+
+  <section>
+    <div class="grid">
+      <div class="card emergency"><h2>🚨 911</h2><p>Emergencias</p><a class="call" href="tel:911">📞 Llamar</a></div>
+      <div class="card emergency"><h2>🚒 100</h2><p>Bomberos</p><a class="call" href="tel:100">📞 Llamar</a></div>
+      <div class="card emergency"><h2>🏥 107</h2><p>Emergencias médicas</p><a class="call" href="tel:107">📞 Llamar</a></div>
+      <div class="card"><h2>🏛️ Municipalidad de Ceres</h2><p>42-0225</p><a class="call" href="tel:+543491420225">📞 Llamar</a></div>
+      <div class="card"><h2>🏥 Hospital Ceres</h2><p>42-1117</p><a class="call" href="tel:+543491421117">📞 Llamar</a></div>
+      <div class="card"><h2>🚒 Bomberos Voluntarios Ceres</h2><p>42-0568</p><a class="call" href="tel:+543491420568">📞 Llamar</a></div>
+      <div class="card"><h2>🪖 Gendarmería Ceres</h2><p>42-7081</p><a class="call" href="tel:+543491427081">📞 Llamar</a></div>
+      <div class="card emergency"><h2>📞 144</h2><p>Violencia de género</p><a class="call" href="tel:144">📞 Llamar</a></div>
+      <div class="card"><h2>🛡️ 103</h2><p>Defensa Civil</p><a class="call" href="tel:103">📞 Llamar</a></div>
+    </div>
+  </section>
+
+  <section class="weather">
+    <h2>🌦️ Estación meteorológica automática de Ceres</h2>
+    <p>Datos de la estación EMA BV Ceres - CMMC SAT · <strong>ICERES21</strong>, de Bomberos Voluntarios Ceres.</p>
+    <iframe class="weather-frame" src="https://www.wunderground.com/dashboard/pws/ICERES21" title="Estación meteorológica ICERES21"></iframe>
+    <a class="weather-btn" href="https://www.wunderground.com/dashboard/pws/ICERES21" target="_blank" rel="noopener">🌐 Ver estación completa</a>
+  </section>
+
+  <div class="note">ℹ️ Los números de emergencia son servicios oficiales. Los teléfonos locales se muestran como referencia y conviene verificarlos periódicamente.</div>
+</main>
+<footer>GCM Servicio Técnico · Ceres, Santa Fe</footer>
+</body>
+</html>

@@ -75,6 +75,26 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 .map-btn{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:9px;border:1px solid #168de0;background:#061a30;font-weight:800}
 .float-wa{position:fixed;right:18px;bottom:18px;z-index:50;background:#1fd967;color:#03120a;border:2px solid #b9ffd0;border-radius:999px;padding:13px 17px;font-weight:900;box-shadow:0 8px 28px rgba(0,0,0,.45);display:flex;gap:8px;align-items:center}
 @media(max-width:700px){.quick{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:1fr}.float-wa{right:12px;bottom:12px;padding:11px 14px;font-size:.9rem}}
+
+.ceres-section{padding:55px 0 35px;background:linear-gradient(180deg,rgba(3,18,35,.2),rgba(2,9,20,.8))}
+.ceres-head{text-align:center;margin-bottom:24px}
+.ceres-head h2{font-size:clamp(1.8rem,5vw,2.7rem);margin:8px 0;text-shadow:0 0 18px #168de0}
+.ceres-head p{color:#b8c9dc;max-width:760px;margin:auto;line-height:1.5}
+.ceres-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:20px;align-items:stretch}
+.ceres-card,.weather-card{background:linear-gradient(180deg,#08233d,#061321);border:1px solid #168de0;border-radius:16px;padding:18px;box-shadow:0 0 24px rgba(22,141,224,.12)}
+.ceres-card h3,.weather-card h3{margin:0 0 14px;color:#51baff}
+.phone-list{display:grid;gap:10px}
+.phone-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 12px;border:1px solid rgba(22,141,224,.3);border-radius:11px;background:#061a30}
+.phone-item span{font-weight:700}
+.phone-item a{background:#20df63;color:#00150a;padding:8px 11px;border-radius:9px;font-weight:900;white-space:nowrap}
+.phone-item.emergency{border-color:#e64b4b}
+.phone-item.emergency a{background:#ff5b5b;color:#fff}
+.weather-frame{width:100%;height:560px;border:0;border-radius:12px;background:#fff}
+.weather-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.weather-actions a{display:inline-block;border:1px solid #168de0;border-radius:10px;padding:10px 13px;background:#061a30;font-weight:800}
+.ceres-note{margin-top:12px;color:#9fb4ca;font-size:.88rem;line-height:1.45}
+@media(max-width:800px){.ceres-grid{grid-template-columns:1fr}.weather-frame{height:500px}}
+
 </style>
 </head>
 <body>
@@ -82,7 +102,7 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <div class="wrap"><nav>
 <a class="brand" href="#inicio">GCM <span>SERVICIO TÉCNICO</span></a>
 <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
-<div class="nav" id="mainNav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#confianza">Confianza</a><a href="ventas.html">🛒 En venta</a><a href="#contacto">Contacto</a></div>
+<div class="nav" id="mainNav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#confianza">Confianza</a><a href="ventas.html">🛒 En venta</a><a href="servicios-ceres.html">📍 Servicios Ceres</a><a href="#contacto">Contacto</a></div>
 <div class="socials"><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank" aria-label="Instagram">📸</a><a href="https://www.facebook.com/share/1F8xRkafck/" target="_blank" aria-label="Facebook">f</a><a href="https://wa.me/5493491511856" target="_blank" aria-label="WhatsApp">◉</a></div>
 </nav></div>
 </header>
@@ -169,6 +189,9 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 </div>
 </div>
 </section>
+
+
+
 
 <section id="contacto">
 <div class="wrap">

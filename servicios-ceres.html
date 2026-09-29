@@ -3,73 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicios Ceres | GCM Servicio Técnico</title>
-<meta name="description" content="Teléfonos útiles, emergencias y datos meteorológicos de Ceres, Santa Fe.">
+<meta name="theme-color" content="#071a2d">
+<meta name="description" content="Servicio a la comunidad de Ceres: teléfonos útiles, emergencias, clima y Ojos en Alerta.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="servicio-comunidad-icon-512.png">
+<title>Servicio a la comunidad | Ceres</title>
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#070b12;color:#f4f7fb}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#050a12;color:#f4f7fb}
 a{text-decoration:none;color:inherit}
-header{position:sticky;top:0;z-index:20;background:rgba(7,11,18,.96);border-bottom:1px solid #17324d;padding:14px 5%}
-.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{font-size:20px;font-weight:800;color:#28a9ff}
-.back{display:inline-block;padding:10px 15px;border:1px solid #28a9ff;border-radius:10px;color:#fff}
-main{max-width:1150px;margin:auto;padding:35px 5% 60px}
-.hero{text-align:center;padding:20px 0 28px}
-.hero h1{font-size:clamp(30px,6vw,52px);margin:10px 0;color:#fff}
-.hero p{color:#aebdcb;font-size:17px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:25px}
-.card{background:linear-gradient(145deg,#0d1622,#0a111b);border:1px solid #1c3a55;border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(0,0,0,.25)}
-.card h2{font-size:20px;margin:0 0 8px}
+header{position:sticky;top:0;z-index:50;background:rgba(5,10,18,.97);border-bottom:1px solid #17324d;padding:13px 5%}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:19px;font-weight:800;color:#35b4ff}
+.nav-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #228fd1;background:#071a2d;color:#fff;font-weight:800}
+.btn.primary{background:#1597e5;border-color:#1597e5;color:#03101c}
+main{max-width:1150px;margin:auto;padding:28px 5% 60px}
+.hero{text-align:center;padding:10px 0 25px}
+.hero h1{font-size:clamp(30px,6vw,52px);margin:8px 0;color:#fff}
+.hero p{color:#aebdcb;font-size:17px;line-height:1.45}
+.oa-image{width:100%;max-width:900px;display:block;margin:18px auto 24px;border-radius:18px;border:1px solid #1e4968;box-shadow:0 12px 35px rgba(0,0,0,.35)}
+.section-title{font-size:27px;margin:34px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:linear-gradient(145deg,#0d1622,#09111c);border:1px solid #1c3a55;border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(0,0,0,.22)}
+.card h3{font-size:20px;margin:0 0 8px}
 .card p{color:#aebdcb;margin:7px 0 15px}
-.call{display:block;text-align:center;background:#0d8eea;color:#fff;padding:12px;border-radius:10px;font-weight:700}
+.call{display:block;text-align:center;background:#0d8eea;color:#fff;padding:12px;border-radius:10px;font-weight:800}
 .emergency .call{background:#c62828}
-.weather{margin-top:28px}
-.weather h2{margin-bottom:8px}
-.weather p{color:#aebdcb}
-.weather-frame{width:100%;height:720px;border:1px solid #1c3a55;border-radius:16px;background:#fff}
-.weather-btn{display:inline-block;margin-top:14px;background:#28a9ff;color:#04101b;padding:12px 18px;border-radius:10px;font-weight:800}
-.note{margin-top:22px;padding:15px;border-left:4px solid #28a9ff;background:#0b1420;color:#aebdcb;border-radius:8px}
+.weather-frame{width:100%;height:680px;border:1px solid #1c3a55;border-radius:16px;background:#fff}
+.weather-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.note{margin-top:22px;padding:15px;border-left:4px solid #28a9ff;background:#0b1420;color:#aebdcb;border-radius:8px;line-height:1.5}
+.install-box{margin-top:30px;padding:22px;border:1px solid #1c5b82;border-radius:16px;background:linear-gradient(145deg,#0a1827,#07111c)}
+.install-box h2{margin-top:0}
+.install-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.step{background:#091522;border:1px solid #18364e;border-radius:12px;padding:15px}
+.step b{color:#35b4ff}
 footer{text-align:center;padding:25px;color:#718395;border-top:1px solid #17324d}
-@media(max-width:600px){.weather-frame{height:600px}.nav{align-items:flex-start}.logo{font-size:17px}.back{padding:8px 11px}}
+@media(max-width:700px){
+  .nav{align-items:flex-start}.brand{font-size:16px}.nav-actions{max-width:65%}
+  .weather-frame{height:560px}.install-steps{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 <header>
   <div class="nav">
-    <div class="logo">GCM Servicio Técnico</div>
-    <a class="back" href="index.html">← Volver al inicio</a>
+    <div class="brand">🤝 Servicio a la comunidad</div>
+    <div class="nav-actions">
+      <a class="btn" href="index.html">← Inicio</a>
+      <button class="btn primary" id="installBtn" hidden>📲 Instalar</button>
+    </div>
   </div>
 </header>
+
 <main>
-  <section class="hero">
-    <h1>📍 Servicios Ceres</h1>
-    <p>Teléfonos útiles, emergencias y datos meteorológicos de Ceres, Santa Fe.</p>
-  </section>
+<section class="hero">
+  <h1>🤝 Servicio a la comunidad</h1>
+  <p>Información útil para vecinos de Ceres: emergencias, teléfonos locales, clima y acceso directo a Ojos en Alerta.</p>
+  <img class="oa-image" src="1000940974.jpg" alt="Ojos en Alerta">
+</section>
 
-  <section>
-    <div class="grid">
-      <div class="card emergency"><h2>🚨 911</h2><p>Emergencias</p><a class="call" href="tel:911">📞 Llamar</a></div>
-      <div class="card emergency"><h2>🚒 100</h2><p>Bomberos</p><a class="call" href="tel:100">📞 Llamar</a></div>
-      <div class="card emergency"><h2>🏥 107</h2><p>Emergencias médicas</p><a class="call" href="tel:107">📞 Llamar</a></div>
-      <div class="card"><h2>🏛️ Municipalidad de Ceres</h2><p>42-0225</p><a class="call" href="tel:+543491420225">📞 Llamar</a></div>
-      <div class="card"><h2>🏥 Hospital Ceres</h2><p>42-1117</p><a class="call" href="tel:+543491421117">📞 Llamar</a></div>
-      <div class="card"><h2>🚒 Bomberos Voluntarios Ceres</h2><p>42-0568</p><a class="call" href="tel:+543491420568">📞 Llamar</a></div>
-      <div class="card"><h2>🪖 Gendarmería Ceres</h2><p>42-7081</p><a class="call" href="tel:+543491427081">📞 Llamar</a></div>
-      <div class="card emergency"><h2>📞 144</h2><p>Violencia de género</p><a class="call" href="tel:144">📞 Llamar</a></div>
-      <div class="card"><h2>🛡️ 103</h2><p>Defensa Civil</p><a class="call" href="tel:103">📞 Llamar</a></div>
-    </div>
-  </section>
+<section>
+  <h2 class="section-title">📞 Teléfonos útiles</h2>
+  <div class="grid">
+    <div class="card emergency"><h3>🚨 911</h3><p>Emergencias</p><a class="call" href="tel:911">📞 Llamar</a></div>
+    <div class="card emergency"><h3>🚒 100</h3><p>Bomberos</p><a class="call" href="tel:100">📞 Llamar</a></div>
+    <div class="card emergency"><h3>🏥 107</h3><p>Emergencias médicas</p><a class="call" href="tel:107">📞 Llamar</a></div>
+    <div class="card"><h3>🏛️ Municipalidad de Ceres</h3><p>42-0225</p><a class="call" href="tel:+543491420225">📞 Llamar</a></div>
+    <div class="card"><h3>🏥 Hospital Ceres</h3><p>42-1117</p><a class="call" href="tel:+543491421117">📞 Llamar</a></div>
+    <div class="card"><h3>🚒 Bomberos Voluntarios Ceres</h3><p>42-0568</p><a class="call" href="tel:+543491420568">📞 Llamar</a></div>
+    <div class="card"><h3>🪖 Gendarmería Ceres</h3><p>42-7081</p><a class="call" href="tel:+543491427081">📞 Llamar</a></div>
+    <div class="card emergency"><h3>📞 144</h3><p>Violencia de género</p><a class="call" href="tel:144">📞 Llamar</a></div>
+    <div class="card"><h3>🛡️ 103</h3><p>Defensa Civil</p><a class="call" href="tel:103">📞 Llamar</a></div>
+  </div>
+</section>
 
-  <section class="weather">
-    <h2>🌦️ Estación meteorológica automática de Ceres</h2>
-    <p>Datos de la estación EMA BV Ceres - CMMC SAT · <strong>ICERES21</strong>, de Bomberos Voluntarios Ceres.</p>
-    <iframe class="weather-frame" src="https://www.wunderground.com/dashboard/pws/ICERES21" title="Estación meteorológica ICERES21"></iframe>
-    <a class="weather-btn" href="https://www.wunderground.com/dashboard/pws/ICERES21" target="_blank" rel="noopener">🌐 Ver estación completa</a>
-  </section>
+<section>
+  <h2 class="section-title">👁️ Ojos en Alerta</h2>
+  <div class="card">
+    <h3>Enviar una alerta por WhatsApp</h3>
+    <p>Ojos en Alerta fue implementado en Ceres como herramienta de participación ciudadana conectada con el Centro de Coordinación y Control. Permite enviar mensajes, audios, fotos, videos y ubicación ante situaciones sospechosas, accidentes o hechos que requieran aviso.</p>
+    <a class="call" style="background:#20b95a" href="https://wa.me/5493491533027?text=Hola%20Ojos%20en%20Alerta%20Ceres" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
+    <div class="note">⚠️ Para emergencias inmediatas, utilizá 911. Ojos en Alerta Ceres: <strong>+54 9 3491 53-3027</strong>.</div>
+  </div>
+</section>
 
-  <div class="note">ℹ️ Los números de emergencia son servicios oficiales. Los teléfonos locales se muestran como referencia y conviene verificarlos periódicamente.</div>
+<section>
+  <h2 class="section-title">🌦️ Pronóstico oficial — Ceres</h2>
+  <p style="color:#aebdcb">Pronóstico del Servicio Meteorológico Nacional para la localidad.</p>
+  <iframe class="weather-frame" src="https://www.smn.gob.ar/pronostico/?loc=1967" title="Pronóstico del Servicio Meteorológico Nacional para Ceres"></iframe>
+  <div class="weather-actions">
+    <a class="btn primary" href="https://www.smn.gob.ar/pronostico/?loc=1967" target="_blank" rel="noopener">🌐 Ver pronóstico completo</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🌡️ Estación meteorológica automática</h2>
+  <p style="color:#aebdcb">Datos de la estación EMA BV Ceres - CMMC SAT · <strong>ICERES21</strong>, de Bomberos Voluntarios Ceres.</p>
+  <iframe class="weather-frame" src="https://www.wunderground.com/dashboard/pws/ICERES21" title="Estación meteorológica ICERES21"></iframe>
+  <div class="weather-actions">
+    <a class="btn primary" href="https://www.wunderground.com/dashboard/pws/ICERES21" target="_blank" rel="noopener">🌐 Ver estación completa</a>
+  </div>
+</section>
+
+<section class="install-box">
+  <h2>📲 Tener “Servicio a la comunidad” como acceso directo</h2>
+  <p style="color:#aebdcb">La página está preparada para instalarse como una aplicación/acceso directo cuando el navegador lo permita.</p>
+  <button class="btn primary" id="installBtn2">📲 Instalar en este dispositivo</button>
+  <div class="install-steps" style="margin-top:16px">
+    <div class="step"><b>📱 Android / Chrome</b><br>Buscá “Instalar aplicación” o “Agregar a pantalla de inicio” en el menú ⋮.</div>
+    <div class="step"><b>💻 PC / Chrome o Edge</b><br>Buscá el ícono de instalar en la barra de direcciones o “Instalar aplicación” en el menú.</div>
+    <div class="step"><b>🍎 iPhone / iPad</b><br>Compartir → “Agregar a pantalla de inicio”.</div>
+  </div>
+</section>
+
+<div class="note">ℹ️ Los números de emergencia son servicios oficiales. Los teléfonos locales se muestran como referencia y conviene verificarlos periódicamente.</div>
 </main>
-<footer>GCM Servicio Técnico · Ceres, Santa Fe</footer>
+
+<footer>Servicio a la comunidad · Ceres, Santa Fe · GCM Servicio Técnico</footer>
+
+<script>
+let deferredPrompt;
+const buttons = [document.getElementById('installBtn'), document.getElementById('installBtn2')];
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  if(buttons[0]) buttons[0].hidden = false;
+});
+
+async function installApp(){
+  if(!deferredPrompt){
+    alert('Si no aparece la instalación automática, abrí el menú del navegador y elegí “Agregar a pantalla de inicio” o “Instalar aplicación”.');
+    return;
+  }
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice;
+  deferredPrompt = null;
+  if(buttons[0]) buttons[0].hidden = true;
+}
+buttons.forEach(b => b && b.addEventListener('click', installApp));
+
+if('serviceWorker' in navigator){
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+}
+</script>
 </body>
 </html>

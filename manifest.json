@@ -1,0 +1,17 @@
+{
+  "name": "Servicio a la comunidad - Ceres",
+  "short_name": "Ceres Comunidad",
+  "start_url": "servicios-ceres.html",
+  "display": "standalone",
+  "background_color": "#050a12",
+  "theme_color": "#071a2d",
+  "description": "Teléfonos útiles, emergencias, clima y Ojos en Alerta para Ceres.",
+  "icons": [
+    {
+      "src": "servicio-comunidad-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

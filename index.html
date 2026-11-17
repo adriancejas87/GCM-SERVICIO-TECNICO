@@ -95,6 +95,19 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 .ceres-note{margin-top:12px;color:#9fb4ca;font-size:.88rem;line-height:1.45}
 @media(max-width:800px){.ceres-grid{grid-template-columns:1fr}.weather-frame{height:500px}}
 
+
+.social-feed-section{padding:52px 0;background:linear-gradient(180deg,#061321,#030a13)}
+.social-feed-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.social-feed-card{min-width:0;overflow:hidden;background:linear-gradient(160deg,#0b2238,#07111d);border:1px solid #176da7;border-radius:16px;padding:15px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.social-feed-heading{display:flex;align-items:center;gap:11px;margin-bottom:12px}.social-feed-heading>span{font-size:28px}.social-feed-heading h3{margin:0;color:#fff;font-size:1.15rem}.social-feed-heading small{display:block;color:#9fb4ca;margin-top:3px}
+.social-embed{height:440px;border-radius:11px;overflow:hidden;background:#07111d;display:flex;justify-content:center;align-items:flex-start}
+.social-embed iframe{width:100%;height:100%;border:0;background:#07111d}
+.instagram-embed iframe{min-width:100%;max-width:100%}.facebook-embed{background:#07111d;display:block;padding:0}.facebook-preview{text-align:center;color:#fff;width:100%}.facebook-logo{width:76px;height:76px;margin:0 auto 14px;border-radius:18px;background:#1877f2;display:grid;place-items:center;font-size:54px;font-weight:900;line-height:1}.facebook-preview h4{font-size:1.25rem;margin:0 0 8px}.facebook-preview p{color:#c5d7ea;line-height:1.5;margin:0 auto 18px;max-width:260px}.facebook-preview a{display:inline-block;background:#1877f2;color:#fff;font-weight:900;padding:12px 18px;border-radius:10px}.tiktok-embed{background:#090909}.tiktok-embed iframe{background:#090909}
+.social-follow{display:block;text-align:center;margin-top:12px;padding:11px;border-radius:9px;color:#fff;font-weight:800}.instagram-follow{background:#c13584}.facebook-follow{background:#1877f2}.tiktok-follow{background:#171717;border:1px solid #555}
+.social-feed-note{color:#9fb4ca;text-align:center;font-size:.88rem;line-height:1.5;margin:15px auto 0;max-width:850px}
+@media(max-width:900px){.social-feed-grid{grid-template-columns:1fr 1fr}.social-feed-card:last-child{grid-column:1/-1}}
+@media(max-width:600px){.social-feed-grid{grid-template-columns:1fr}.social-feed-card:last-child{grid-column:auto}.social-embed{height:420px}}
+
 </style>
 </head>
 <body>
@@ -103,7 +116,7 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <a class="brand" href="#inicio">GCM <span>SERVICIO TÉCNICO</span></a>
 <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
 <div class="nav" id="mainNav"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#publicaciones">Publicaciones</a><a href="#galeria">Galería</a><a href="#confianza">Confianza</a><a href="ventas.html">🛒 En venta</a><a href="servicios-ceres.html">🤝 Servicio a la comunidad</a><a href="#contacto">Contacto</a></div>
-<div class="socials"><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank" aria-label="Instagram">📸</a><a href="https://www.facebook.com/share/1F8xRkafck/" target="_blank" aria-label="Facebook">f</a><a href="https://wa.me/5493491511856" target="_blank" aria-label="WhatsApp">◉</a></div>
+<div class="socials"><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank" aria-label="Instagram">📸</a><a href="https://www.facebook.com/gcmserviciotecnico" target="_blank" aria-label="Facebook">f</a><a href="https://wa.me/5493491511856" target="_blank" aria-label="WhatsApp">◉</a></div>
 </nav></div>
 </header>
 
@@ -134,6 +147,47 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 </div>
 </div>
 </div>
+</section>
+
+<section id="redes-gcm" class="social-feed-section">
+  <div class="wrap">
+    <div class="title"><h2>🌐 Seguinos en nuestras redes</h2><p>Conocé nuestras publicaciones, videos y novedades de GCM Servicio Técnico.</p></div>
+    <div class="social-feed-grid">
+      <article class="social-feed-card instagram-feed">
+        <div class="social-feed-heading"><span>📸</span><div><h3>Instagram</h3><small>@gcm_serviciotecnico</small></div></div>
+        <div class="social-embed instagram-embed">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fp%2F19pmy3USmw%2F&show_text=true&width=500"
+            title="Publicación de Facebook de GCM Servicio Técnico"
+            loading="lazy"
+            scrolling="no"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+        <a class="social-follow instagram-follow" href="https://www.instagram.com/gcm_serviciotecnico/" target="_blank" rel="noopener">Ver Instagram ↗</a>
+      </article>
+      <article class="social-feed-card facebook-feed">
+        <div class="social-feed-heading"><span>🔵</span><div><h3>Facebook</h3><small>GCM Servicio Técnico</small></div></div>
+        <div class="social-embed facebook-embed">
+          <div class="facebook-preview">
+            <div class="facebook-logo">f</div>
+            <h4>GCM Servicio Técnico</h4>
+            <p>Seguinos en Facebook para ver novedades, promociones, publicaciones y trabajos realizados en el taller.</p>
+            <a href="https://www.facebook.com/gcmserviciotecnico" target="_blank" rel="noopener">Seguir en Facebook ↗</a>
+          </div>
+        </div>
+        <a class="social-follow facebook-follow" href="https://www.facebook.com/gcmserviciotecnico" target="_blank" rel="noopener">Seguir página de Facebook ↗</a>
+      </article>
+      <article class="social-feed-card tiktok-feed">
+        <div class="social-feed-heading"><span>🎵</span><div><h3>TikTok</h3><small>@gcmserviciotecnico</small></div></div>
+        <div class="social-embed tiktok-embed">
+          <iframe src="https://www.tiktok.com/embed/@gcmserviciotecnico" title="TikTok de GCM Servicio Técnico" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <a class="social-follow tiktok-follow" href="https://www.tiktok.com/@gcmserviciotecnico" target="_blank" rel="noopener">Ver TikTok ↗</a>
+      </article>
+    </div>
+    <p class="social-feed-note">Si alguna red no muestra su contenido dentro de esta ventana por restricciones de la plataforma, podés abrirla con el botón correspondiente.</p>
+  </div>
 </section>
 
 <section id="servicios">
@@ -199,7 +253,7 @@ footer{margin-top:20px;border-top:1px solid #168de0;padding:28px 0;color:var(--m
 <div class="info">
 <div class="box"><h3>📍 Ubicación</h3><p><b>Ceres, Santa Fe</b></p><p>Atención en taller y opciones de entrega en Ceres y zona.</p></div>
 <div class="box"><h3>📱 WhatsApp</h3><p class="big-wa">3491 511856</p><a class="cta" href="https://wa.me/5493491511856" target="_blank">Abrir WhatsApp</a></div>
-<div class="box"><h3>🌐 Nuestras redes</h3><p><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank">📸 Instagram</a></p><p><a href="https://www.facebook.com/share/1F8xRkafck/" target="_blank">📘 Facebook</a></p></div>
+<div class="box"><h3>🌐 Nuestras redes</h3><p><a href="https://www.instagram.com/gcm_serviciotecnico?stkn=M2poMmRpeXBheGNt" target="_blank">📸 Instagram</a></p><p><a href="https://www.facebook.com/gcmserviciotecnico" target="_blank">📘 Facebook</a></p></div>
 </div>
 </div>
 </section>
